@@ -1,0 +1,126 @@
+/* Navbar Styles */
+header {
+  background: #000;
+  color: white;
+  padding: 1rem 0;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 1rem;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  width: 36px;
+  height: 36px;
+}
+
+nav {
+  margin: 0 auto;
+}
+
+nav a {
+  color: #ffffffbe;
+}
+
+.nav-links {
+  font-weight: 500;
+  font-style: normal;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.nav-links + .nav-links {
+  margin-left: 0.6em;
+}
+
+.nav-links:hover {
+  color: #ffffff;
+  text-decoration: underline;
+  transition: 500ms;
+}
+
+/* Site Settings */
+.site-settings {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.site-settings .icons {
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #ffffff;
+  padding-right: 0.5rem;
+  gap: 0.5rem;
+}
+
+.nav-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.theme {
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.theme svg {
+  fill: #000;
+  /* color: #000; */
+}
+
+/* Select Styles */
+.dropdown {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown form{
+  margin: 0;
+  padding: 0;
+}
+.dropdown select {
+  background: #000;
+  border: none;
+  color: #ffffff;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-buttons button {
+  color: #ffffff;
+  font-size: 12px;
+  padding: 0.3rem 0.5rem;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-buttons .sign-in {
+  background-color: #ffffff;
+  color: #000;
+  border-radius: 0.5rem;
+}
+
+.nav-buttons .quote {
+  background-color: #003734;
+  color: #ffffff;
+  border-radius: 0.5rem;
+}
