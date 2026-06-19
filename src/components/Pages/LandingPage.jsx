@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 
-import Truck from "../../assets/Truck.svg";
+import Truck from "../../assets/Truck.svg?react";
 import imageOne from "../../assets/tagImage/image-1.jpg";
 import imageTwo from "../../assets/tagImage/image-2.jpg";
 import imageThree from "../../assets/tagImage/image-3.jpg";
@@ -14,39 +14,48 @@ function LandingPage() {
         <section className="hero-section">
           <div className="hero-content">
             <div className="hero-one">
-              <div className="tagline">
-                <div className="icon">
-                  <img src={Truck} alt="truck svg" />
+              <div className="hero-one-content">
+                <div className="tagline">
+                  <div className="icon">
+                    <Truck />
+                  </div>
+                  <span>Transporters</span>
                 </div>
-                <span>Transporters</span>
-              </div>
-              <div className="title">
-                <h1>Move heavy industry forward globally</h1>
-                <p>
-                  Experience world-class transport of massive industrial loads -
-                  safely, globally, and fast.
-                </p>
-              </div>
-              <div className="hero-icons">
-                <div className="icon">
-                  <img src={Truck} alt="truck svg" />
+                <div className="title">
+                  <h1>
+                    Move heavy <br /> industry forward <br /> globally
+                  </h1>
+                  <p>
+                    Experience world-class transport of <br /> massive
+                    industrial loads - safely, globally, <br />
+                    and fast.
+                  </p>
                 </div>
-                <div className="icon">
-                  <LucideGlobe />
+                <div className="hero-icons">
+                  <div className="icon" style={{ backgroundColor: "white" }}>
+                    <Truck />
+                  </div>
+                  <div
+                    className="icon"
+                    style={{ color: "white", backgroundColor: "black" }}>
+                    <LucideGlobe />
+                  </div>
                 </div>
-              </div>
-              <div className="text">
-                <p>
-                  Transporter is now a global logistics partner to many
-                  companies
-                </p>
+                <div className="text">
+                  <p>
+                    Transporter is now a global logistics <br /> partner to many
+                    companies
+                  </p>
+                </div>
               </div>
             </div>
             <div className="hero-two">
               <div className="one">
-                <h2>Find locations to buy, sell or lease containers</h2>
+                <h2>
+                  Find locations to <br /> buy, sell or lease <br /> containers
+                </h2>
                 <div className="one-tagline">
-                  <div className="tag-icon">
+                  <div className="icon">
                     <LucideArrowRight />
                   </div>
                   <p>Request a Quote</p>
@@ -61,7 +70,9 @@ function LandingPage() {
                     </h2>
                   </div>
                   <div className="two-tagline">
-                    <h2>Trusted global partner in logistics</h2>
+                    <h2>
+                      Trusted global partner <br /> in logistics
+                    </h2>
                     <div className="img-tagline">
                       <img src={imageOne} alt="" />
                       <img src={imageTwo} alt="" />
