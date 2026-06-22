@@ -8,6 +8,7 @@ section {
 .hero-content {
   display: flex;
   justify-content: space-between;
+  align-items: start;
   gap: 1.5rem;
 }
 
@@ -72,7 +73,7 @@ section {
 }
 
 .title p {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .hero-icons {
@@ -108,9 +109,10 @@ section {
 }
 
 .hero-two {
-  width: 50%;
+  /* width: 50%; */
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 1rem;
   align-items: center;
 }
@@ -124,6 +126,7 @@ section {
   padding-top: 8rem;
   border-radius: 35px;
   display: flex;
+  align-items: end;
   color: #fff;
   text-transform: capitalize;
 }
@@ -134,13 +137,28 @@ section {
 }
 
 .one-tagline {
+  display: inline-flex;
+  gap: 0.4rem;
+  align-items: center;
+  padding: 0.2rem 0.4rem;
+  font-size: 16px;
+  background-color: #000;
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+.one-tagline .icon {
   display: flex;
-  gap: 1rem;
+  justify-items: center;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  border-radius: 50%;
 }
 
 .hero-two .two {
   background-color: #d9d9d9;
-  padding: 1rem;
+  padding: 1rem 2rem;
   border-radius: 35px;
 }
 
@@ -161,14 +179,20 @@ section {
   text-align: center;
   padding: 2rem;
   margin-top: 1.5rem;
+  width: 70%;
   margin: 0 auto;
+}
+
+.two-title h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .two-tagline {
   display: flex;
   text-transform: capitalize;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .two-tagline h2 {

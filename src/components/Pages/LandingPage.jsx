@@ -71,7 +71,7 @@ function LandingPage() {
                   </div>
                   <div className="two-tagline">
                     <h2>
-                      Trusted global partner <br /> in logistics
+                      Trusted global <br /> partner in logistics
                     </h2>
                     <div className="img-tagline">
                       <img src={imageOne} alt="" />
