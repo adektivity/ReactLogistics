@@ -177,19 +177,22 @@ h3 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: overlay;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 2rem;
   margin-top: 1.5rem;
-  width: 70%;
+  /* width: 70%; */
   margin: 0 auto;
 }
 
 .two-title h2 {
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
 }
 
 .two-tagline {
@@ -246,21 +249,170 @@ h3 {
   display: flex;
   /* justify-content: center; */
   align-items: end;
-  /* gap: 5rem; */
+  justify-content: space-between;
+  gap: 5rem;
 }
 
-.inner-text h2 {
+.h2 {
+  width: auto;
+}
+
+.h2 h2 {
   font-size: 36px;
   font-weight: 600;
 }
 
-.inner-text .span-color {
+.h2 .span-color {
   font-weight: 600;
   color: #1daba9;
 }
 
-.inner-text p {
+.p {
+  text-align: start;
+  width: 50%;
+}
+
+.p p {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1rem;
   text-transform: capitalize;
+}
+
+.service-content .service-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  width: 100%;
+}
+
+.service-cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  color: #fff;
+  height: 250px;
+  border-radius: 25px;
+}
+.card h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.card-1 {
+  background-image: url("../../assets/Card/card-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-2 {
+  background-image: url("../../assets/Card/card-2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-3 {
+  background-image: url("../../assets/Card/card-3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-4 {
+  background-image: url("../../assets/Card/card-4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-5 {
+  background-image: url("../../assets/Card/card-5.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.service-content .service-link {
+  margin: 0 auto;
+  background-color: #013936;
+  border-radius: 20px;
+}
+
+.service-link a {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.service-link a > .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Work Section */
+.work {
+  background-color: #013936;
+  padding: 5rem 1.5rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.work-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.work-content .work-head {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.work-head .work-subhead {
+  display: flex;
+}
+
+.work-content .work-list {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.work-list .list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Quick Image edit */
+.work-list .image-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-div {
+  border: 2px dotted red;
+  padding: 1.5rem;
+  border-radius: 50%;
+}
+
+.image-div img {
+  width: 100%;
+  border-radius: 50%;
 }

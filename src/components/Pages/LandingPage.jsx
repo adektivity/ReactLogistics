@@ -93,15 +93,20 @@ function LandingPage() {
             <div className="service-text">
               <h3>Our Services</h3>
               <div className="inner-text">
-                <h2>
-                  <span className="span-color">We provide the best </span>
-                  Logistic <span className="span-color">Services</span>
-                </h2>
-                <p>
-                  Experience Reliable Efficient and customized Logistics
-                  solution designed to move your goods safely and on time - By
-                  Air, sea or land.
-                </p>
+                <div className="h2">
+                  <h2>
+                    <span className="span-color">We provide the </span>best{" "}
+                    <br />
+                    Logistic <span className="span-color">Services</span>
+                  </h2>
+                </div>
+                <div className="p">
+                  <p>
+                    Experience Reliable Efficient and customized Logistics
+                    solution designed to move your goods safely and on time - By
+                    Air, sea or land.
+                  </p>
+                </div>
               </div>
             </div>
             <div className="service-cards">
@@ -178,7 +183,9 @@ function LandingPage() {
                 </div>
               </div>
               <div className="image-border">
-                <div className="image-div"></div>
+                <div className="image-div">
+                  <img src="./src/assets/freight.jpg" alt="freight" />
+                </div>
               </div>
               <div className="list">
                 <div className="list-text">
