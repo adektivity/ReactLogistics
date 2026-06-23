@@ -3,6 +3,10 @@ section {
   min-height: 100vh;
 }
 
+h3 {
+  font-size: 24px;
+}
+
 /* Hero Section */
 
 .hero-content {
@@ -217,4 +221,46 @@ section {
 
 .img-tagline img + img {
   margin-left: -6px;
+}
+
+/* Services Section */
+.service-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1.5rem;
+}
+
+.service-content .service-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.service-text h3 {
+  color: #24706f;
+}
+
+.service-text .inner-text {
+  display: flex;
+  /* justify-content: center; */
+  align-items: end;
+  /* gap: 5rem; */
+}
+
+.inner-text h2 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.inner-text .span-color {
+  font-weight: 600;
+  color: #1daba9;
+}
+
+.inner-text p {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: capitalize;
 }
