@@ -6,7 +6,12 @@ import Truck from "../../assets/Truck.svg?react";
 import imageOne from "../../assets/tagImage/image-1.jpg";
 import imageTwo from "../../assets/tagImage/image-2.jpg";
 import imageThree from "../../assets/tagImage/image-3.jpg";
+import blogOne from "../../assets/images/blog-1.jpg";
+import blogTwo from "../../assets/images/blog-2.jpg";
+import blogThree from "../../assets/images/blog-3.jpg";
+import Freight from "../../assets/freight.jpg";
 import { LucideGlobe, LucideArrowRight } from "lucide-react";
+import { LuArrowRight } from "react-icons/lu";
 
 function LandingPage() {
   return (
@@ -14,9 +19,9 @@ function LandingPage() {
       <main className="container">
         {/* Hero Section */}
         <section className="hero-section">
-          <div className="hero-content">
+          <div className="grid hero-content">
             <div className="hero-one">
-              <div className="hero-one-content">
+              <div className="flex-col hero-one-content">
                 <div className="tagline">
                   <div className="icon">
                     <Truck />
@@ -109,7 +114,7 @@ function LandingPage() {
                 </div>
               </div>
             </div>
-            <div className="service-cards">
+            <div className="grid service-cards">
               <div className="card card-1">
                 <h3>Air Freight</h3>
                 <p>
@@ -184,7 +189,7 @@ function LandingPage() {
               </div>
               <div className="image-border">
                 <div className="image-div">
-                  <img src="./src/assets/freight.jpg" alt="freight" />
+                  <img src={Freight} alt="freight" />
                 </div>
               </div>
               <div className="list">
@@ -208,6 +213,98 @@ function LandingPage() {
                     Goods Are Delivered And Final Documents Shared With The
                     Customer.
                   </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Blog Section */}
+        <section className="blog">
+          <div className="blog-content">
+            <div className="blog-head">
+              <h3>Blogs</h3>
+              <div className="blog-subhead">
+                <h2>
+                  Read all our <br />
+                  Logistics Blogs
+                </h2>
+                <p>
+                  Discover helpful guides and updates about shipping, <br />
+                  transport, and global Logistics
+                </p>
+              </div>
+            </div>
+            <div className="blog-post grid-3">
+              <div className="post flex-col">
+                <img src={blogOne} alt="" />
+                <div className="spacer flex-col">
+                  <div className="post-title flex-row-center">
+                    <img src={imageOne} alt="" />
+                    <div className="post-author">
+                      <h3>Atilla John</h3>
+                      <p>Transporter</p>
+                    </div>
+                  </div>
+                  <div className="preview flex-col">
+                    <h4>
+                      Delivering beyond borders the power of global logistics
+                    </h4>
+                    <p>
+                      A quick look at how todays logistics team keep global
+                      shipments running smoothly
+                    </p>
+                    <Link to="/blog" className="flex-row">
+                      <p>Read Article</p>
+                      <div className="icon">
+                        <LuArrowRight />
+                      </div>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="post">
+                <img src={blogThree} alt="" />
+                <div className="post-title">
+                  <img src={imageThree} alt="" />
+                  <div className="title">
+                    <h4>Sohail Alfridi</h4>
+                    <p>Transporter</p>
+                  </div>
+                  <div className="preview">
+                    <h4>How data and technology drive modern transport.</h4>
+                    <p>
+                      See how tracking tools and automation are changing
+                      transportation forever
+                    </p>
+                    <Link to="/blog">
+                      <p>Read Article</p>
+                      <LuArrowRight />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="post">
+                <img src={blogTwo} alt="" />
+                <div className="post-title">
+                  <img src={imageTwo} alt="" />
+                  <div className="title">
+                    <h4>Danish Ahmed</h4>
+                    <p>Transporter</p>
+                  </div>
+                  <div className="preview">
+                    <h4>
+                      Behind every shipment what makes Logistics run smoothly
+                    </h4>
+                    <p>
+                      Discover the key differences between Air and sea freight
+                      in cost and speed
+                    </p>
+                    <Link to="/blog">
+                      <p>Read Article</p>
+                      <LuArrowRight />
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
